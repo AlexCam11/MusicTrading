@@ -4,10 +4,12 @@ import cn from "classnames";
 import logoImage from "../../../src/assets/img/logo/logoMus.png";
 import imagBalance from "../../../src/assets/img/logo/balance.png";
 
+import Lateral from "../Sidebar/Latera";
 import $ from "jquery";
 import { handleClickScroll } from "../../lib/helpers";
 
-const HeaderOne = () => {
+const HeaderOne = ({visible, setVisible }) => {
+
   // sticky nav bar
   const [stickyClass, setStickyClass] = useState({
     fixed: "",
@@ -71,6 +73,7 @@ const HeaderOne = () => {
 
   return (
     <header id="header">
+       
       <div id="header-fixed-height" className={cn(stickyClass.fixed)} />
 
       <div id="sticky-header" className={cn("menu-area", stickyClass.header)}>
@@ -84,9 +87,8 @@ const HeaderOne = () => {
               <div className="menu-wrap">
                 <nav className={"menu-nav"}>
                   <div className="logo">
-                    <Link to={"/"}>
-                      <img src={logoImage} alt="BigTech Logo" />
-                    </Link>
+                  <Lateral visible={visible} setVisible={setVisible} />
+                   
                   </div>
 
                   <div className={cn("navbar-wrap main-menu d-none d-lg-flex")}>

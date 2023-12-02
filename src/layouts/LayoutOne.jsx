@@ -4,18 +4,18 @@ import HeaderOne from "../components/Header/HeaderOne";
 import PageLoader from "../components/PageLoader/PageLoader";
 import cn from "classnames";
 
-const LayoutOne = (props) => {
+
+const LayoutOne = ({ visible, setVisible, children }) => {
   return (
     <div className={cn("")}>
       <PageLoader />
 
-      <HeaderOne />
+      <HeaderOne visible={visible} setVisible={setVisible} />
 
-      {props.children}
+      {children}
 
       <FooterOne />
     </div>
   );
 };
-
 export default LayoutOne;
