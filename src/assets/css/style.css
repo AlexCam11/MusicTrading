@@ -3571,3 +3571,94 @@ label {
   margin-left: 20%;
 
 }
+
+#cel_reproductor {
+  background-image: url('../img/reproductor/fondo\ 1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+}
+#scroll {
+  max-height: 550px; /* Puedes ajustar la altura máxima según tus necesidades */
+  overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando el contenido es más alto que la altura máxima */
+}
+.imagenRedonda {
+  width: 80px; /* Ajusta el tamaño según sea necesario */
+  height: 30px; /* Ajusta el tamaño según sea necesario */
+  border-radius: 50%; /* Hace que la imagen sea redonda */
+  object-fit: cover; /* Ajusta el comportamiento del contenido de la imagen */
+}
+.btn-pink {
+  background-color: #ED345A;
+  border-color: #ED345A;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 20px; /* Puedes ajustar este valor según el redondeo que desees */
+  padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
+}
+
+/* Estilo para el botón cuando se coloca el cursor encima (hover) */
+.btn-pink:hover {
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+
+#caja {
+  background-image: url('../img/reproductor/search.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+ width: 100%;
+}
+#pc_grande {
+  background-image: url('../img/reproductor/fondo\ 2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh; /* Ajusta según sea necesario */
+  top: 30px;
+}
+.row:last-child {
+  align-self: flex-end;
+}
+.btn-verde {
+  background-color: rgb(49, 160, 64);
+  border-color: rgb(49, 160, 64);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 20px; /* Puedes ajustar este valor según el redondeo que desees */
+  padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
+}
+.btn-rojo {
+  background-color: rgb(185, 56, 39);
+  border-color: rgb(185, 56, 39);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 20px; /* Puedes ajustar este valor según el redondeo que desees */
+  padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
+}
+.mi-imagen {
+  height: 70vh;
+  width: 163%;
+ 
+}
+.cel{
+  position: relative; /* Necesario para z-index funcione */
+  z-index: 2;
+}
+
+.pc {
+  position: relative; /* Necesario para z-index funcione */
+  z-index: 1;
+  left: -60px; 
+}

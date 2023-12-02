@@ -42,8 +42,11 @@ const handleToggleSales = () => {
      
       {visible && <Initial />}
       {visible && <TopPartners />}
-      {visible && <Reproductor />}
+      {/* 
+         {visible && <Reproductor />}
       {visible && <Sales />}
+      */}
+   
       {duelos && <Banner />}
       {duelos && <TeamOne />}
       {redes && <Redes />}

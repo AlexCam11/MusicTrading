@@ -2,8 +2,8 @@ import React from "react";
 import img01 from "../../assets/img/partner/logo-universal.png";
 import img02 from "../../assets/img/partner/logo-sony.png";
 import img03 from "../../assets/img/partner/1.png";
-
-
+import Reproductor from "../Sales/Reproductor";
+import { useState } from "react";
 const TopPartners = () => {
   const partners_list = [
     { src: img01, title: "" },
@@ -11,8 +11,9 @@ const TopPartners = () => {
     {src:img03,title:""}
     
   ];
-
+  const [musica,setmusica]=useState(false);
   return (
+    <>
     <div className="partner-area pb-130">
       <div className="container">
         <div className="row justify-content-center">
@@ -27,7 +28,7 @@ const TopPartners = () => {
             <div className="partner-wrap">
               <ul>
                 {partners_list.map((item, index) => (
-                  <li key={index}>
+                  <li key={index} onClick={()=>setmusica(true)}>
                     <img src={item.src} alt={item.title} />
                   </li>
                 ))}
@@ -37,6 +38,10 @@ const TopPartners = () => {
         </div>
       </div>
     </div>
+   {
+    musica && <Reproductor />
+   } 
+    </>
   );
 };
 
