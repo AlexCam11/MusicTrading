@@ -7,8 +7,11 @@ import TeamOne from "../../components/Team/TeamOne";
 import TopPartners from "../../components/TopPartners/TopPartners";
 import WhitePaper from "../../components/WhitePaper/WhitePaper";
 import WhoWeAre from "../../components/WhoWeAre/WhoWeAre";
-import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
+import WhyElements from "../../components/WhyChooseUs/WhyElements";
 import LayoutOne from "../../layouts/LayoutOne";
+import { useState } from "react";
+import Reproductor from "../../components/Sales/Reproductor";
+import Initial from "../../components/Sales/Initial";
 
 const Home = () => {
 
@@ -19,22 +22,35 @@ const Home = () => {
 
         <ContactOne />
   */
-  return (
-    <LayoutOne>
-      <main className="fix">
-        <Sales />
-        <TeamOne />
-        <Banner />
-        <WhoWeAre />
 
+
+const [visible, setVisible] = useState(true);
+const [duelos, setDuelos] = useState(false);
+const handleToggleSales = () => {
+  
+  setVisible(!visible);
+};
+
+
+
+  return (
+    <LayoutOne  visible={visible} setVisible={setVisible} >
+      <main className="fix">
+     
+      {visible && <Initial />}
+      {visible && <Reproductor />}
+      
+       {/* 
+        <TeamOne />
+       
+        <Banner />
+        {duelos &&  <WhoWeAre />}
         <TopPartners />
         <WhyChooseUs />
-        
-
        
-
-        
-        
+       */}
+       
+       
       </main>
     </LayoutOne>
   );
