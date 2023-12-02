@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import cn from "classnames";
+import art from "../../assets/img/team/balvin1.png";
 
 const SalesTabContent = (props) => {
   return (
@@ -12,13 +13,8 @@ const SalesTabContent = (props) => {
     >
       <div className="chart-content-inner">
         <h2 className="title">{props.title}</h2>
-        <p>{props.description}</p>
-        <Link to={props.link} className="btn">
-          COLLECT
-        </Link>
-        <Link to={props.link} className="btn" style={{background:"#008000"}}>
-          DEPOSIT
-        </Link>
+        <p className="">{props.description}</p>
+        <img src={art} alt="" ></img>
       </div>
     </div>
   );

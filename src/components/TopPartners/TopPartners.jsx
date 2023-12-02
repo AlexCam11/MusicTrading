@@ -1,12 +1,14 @@
 import React from "react";
 import img01 from "../../assets/img/partner/logo-universal.png";
 import img02 from "../../assets/img/partner/logo-sony.png";
+import img03 from "../../assets/img/partner/1.png";
 
 
 const TopPartners = () => {
   const partners_list = [
     { src: img01, title: "" },
     { src: img02, title: "" },
+    {src:img03,title:""}
     
   ];
 

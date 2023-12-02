@@ -2,15 +2,13 @@ import React from "react";
 import chartImg from "../../assets/img/images/grafico-final.png";
 import SalesTabButton from "./SalesTabButton";
 import SalesTabContent from "./SalesTabContent";
+import { Link } from "react-router-dom";
 
 const Sales = () => {
   const chart_info_list = [
-    "Contingency: 70%",
-    "Business Development: 10%",
-    "Investor: 30%",
-    "Poland",
-    "Legal & Regulation:10%",
-    "Czech Republic",
+    "Unit: 1/100000 ",
+    "Market Sale: $500",
+    
   ];
 
   return (
@@ -25,6 +23,12 @@ const Sales = () => {
                   {chart_info_list.map((x, index) => (
                     <li key={index}>{x}</li>
                   ))}
+                <Link  className="btn" style={{background:"#FF0000", alignContent: "center"}} >
+                  BUY
+                </Link>
+                <Link className="btn" style={{background:"#008000",alignContent: "center"}}>
+                  SELL
+                </Link>
                 </ul>
               </div>
             </div>
@@ -36,7 +40,7 @@ const Sales = () => {
               >
                 <ul className="nav nav-tabs" id="myTab" role="tablist">
                   <SalesTabButton
-                    title="users"
+                    title="Song"
                     className="active"
                     id="funding-tab"
                     target="#funding"
@@ -59,9 +63,8 @@ const Sales = () => {
                     className={"show active"}
                     id="funding"
                     ariaLabel="funding-tab"
-                    title="10 millions users in the world"
-                    description=" The World’s 1st Music Trading Platform That Offers Rewards and The
-                    platform helps music investors and fans"
+                    title="Mi gente"
+                    description="Song by artist J balvin with 10 M views"
                     link="/"
                   />
 
@@ -70,7 +73,7 @@ const Sales = () => {
                     id="token"
                     ariaLabel="token-tab"
                     title="Investment community"
-                    description="Millions of investments in royalties from record production"
+                    description="39 Million return on investments in royalties"
                     link="/"
                   />
                 </div>

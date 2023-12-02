@@ -20,8 +20,7 @@ const Banner = (props) => {
             <div className="banner-content text-center">
               
               <h2 className="title">
-                Join Future of <span>Music</span> Trading
-                Strategies
+                Join the <span>Duel</span> of music giants
               </h2>
             </div>
             <div className="banner-progress-wrap">

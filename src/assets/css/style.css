@@ -1413,7 +1413,7 @@ label {
   flex-wrap: wrap;
 }
 .partner-wrap ul li {
-  width: 50%;
+  width: 33%;
   height: 300px;
   border: 1px solid rgba(255, 255, 255, 0.06);
   display: flex;
