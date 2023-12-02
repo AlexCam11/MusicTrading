@@ -6,6 +6,7 @@ import HomeTwo from "./pages/Home/HomeTwo";
 import Blog from "./pages/Blog/Blog";
 import BlogDetailsPage from "./pages/BlogDetails/BlogDetailsPage";
 import { useLocation } from "react-router-dom";
+import Inicio from "./components/Sales/Inicio";
 
 function App() {
   useEffect(() => {
@@ -27,6 +28,8 @@ function App() {
   return (
     <>
       <Routes>
+     
+      <Route path="/logins" element={ <Inicio/>} />
         <Route path="/" element={<Home />} />
         <Route path="home-two" element={<HomeTwo />} />
         <Route path="blog" element={<Blog />} />

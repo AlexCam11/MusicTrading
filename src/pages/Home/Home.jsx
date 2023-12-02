@@ -13,10 +13,10 @@ import { useState } from "react";
 import Reproductor from "../../components/Sales/Reproductor";
 import Initial from "../../components/Sales/Initial";
 import Redes from "../../components/Sales/Redes";
+import Inicio from "../../components/Sales/Inicio";
 
 
 const Home = () => {
-
   /* <div className="area-bg">
           <Roadmap />
           <WhitePaper />
@@ -24,8 +24,6 @@ const Home = () => {
 
         <ContactOne />
   */
-
-
 const [visible, setVisible] = useState(true);
 const [duelos, setDuelos] = useState(false);
 const [redes, setRedes] = useState(false);
@@ -39,16 +37,15 @@ const handleToggleSales = () => {
   return (
     <LayoutOne  visible={visible} setVisible={setVisible} setDuelos={setDuelos} setRedes={setRedes}>
       <main className="fix">
+
+       
      
       {visible && <Initial />}
       {visible && <TopPartners />}
       {visible && <Reproductor />}
       {visible && <Sales />}
-
-
       {duelos && <Banner />}
       {duelos && <TeamOne />}
-
       {redes && <Redes />}
       
 
