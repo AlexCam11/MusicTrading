@@ -8,7 +8,7 @@ import Lateral from "../Sidebar/Latera";
 import $ from "jquery";
 import { handleClickScroll } from "../../lib/helpers";
 
-const HeaderOne = ({visible, setVisible }) => {
+const HeaderOne = ({visible, setVisible ,setDuelos,setRedes}) => {
 
   // sticky nav bar
   const [stickyClass, setStickyClass] = useState({
@@ -87,7 +87,7 @@ const HeaderOne = ({visible, setVisible }) => {
               <div className="menu-wrap">
                 <nav className={"menu-nav"}>
                   <div className="logo">
-                  <Lateral visible={visible} setVisible={setVisible} />
+                  <Lateral visible={visible} setVisible={setVisible} setDuelos={setDuelos}  setRedes={setRedes} />
                    
                   </div>
 

@@ -12,6 +12,8 @@ import LayoutOne from "../../layouts/LayoutOne";
 import { useState } from "react";
 import Reproductor from "../../components/Sales/Reproductor";
 import Initial from "../../components/Sales/Initial";
+import Redes from "../../components/Sales/Redes";
+
 
 const Home = () => {
 
@@ -26,6 +28,7 @@ const Home = () => {
 
 const [visible, setVisible] = useState(true);
 const [duelos, setDuelos] = useState(false);
+const [redes, setRedes] = useState(false);
 const handleToggleSales = () => {
   
   setVisible(!visible);
@@ -34,12 +37,21 @@ const handleToggleSales = () => {
 
 
   return (
-    <LayoutOne  visible={visible} setVisible={setVisible} >
+    <LayoutOne  visible={visible} setVisible={setVisible} setDuelos={setDuelos} setRedes={setRedes}>
       <main className="fix">
      
       {visible && <Initial />}
+      {visible && <TopPartners />}
       {visible && <Reproductor />}
+      {visible && <Sales />}
+
+
+      {duelos && <Banner />}
+      {duelos && <TeamOne />}
+
+      {redes && <Redes />}
       
+
        {/* 
         <TeamOne />
        

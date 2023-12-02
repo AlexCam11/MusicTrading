@@ -5,12 +5,12 @@ import PageLoader from "../components/PageLoader/PageLoader";
 import cn from "classnames";
 
 
-const LayoutOne = ({ visible, setVisible, children }) => {
+const LayoutOne = ({ visible, setVisible, children,setDuelos,setRedes }) => {
   return (
     <div className={cn("")}>
       <PageLoader />
 
-      <HeaderOne visible={visible} setVisible={setVisible} />
+      <HeaderOne visible={visible} setVisible={setVisible} setDuelos={setDuelos}  setRedes={setRedes} />
 
       {children}
 
