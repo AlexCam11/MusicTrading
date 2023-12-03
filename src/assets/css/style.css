@@ -1643,13 +1643,13 @@ label {
   padding: 0 110px;
 }
 .chart-bg {
-  background-image: url(../img/bg/bg-Music-tex.png);
+  
   background-size: cover;
   background-position: center;
   padding: 130px 0;
 }
 .chart-bg2 {
-  background-image: url(../img/banner/Banner.png);
+  background-image: url(../img/git/aurora.gif);
   height: 100vh;
   background-size: cover;
   background-position: center;
