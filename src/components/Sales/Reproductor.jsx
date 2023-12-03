@@ -10,76 +10,77 @@ import { useState } from "react";
 import Sales from "./Sales";
 import gra1 from "../../assets/img/images/grafico-final.png";
 import gra2 from "../../assets/img/images/grafico.png";
+import gi from "../../assets/img/reproductor/video grafica.gif";
 const Reproductor = () => {
   const music = [
     {
-      grafico: gra1,
+      grafico: gi,
       img: "https://th.bing.com/th/id/R.028652612efd7538ad56392f5d735cb2?rik=sYRmgsBmp6aefw&pid=ImgRaw&r=0",
       cancion: "Hawái",
       autor: "Maluma",
     },
     {
-      grafico: gra2,
+      grafico: gi,
       img: "https://th.bing.com/th/id/R.028652612efd7538ad56392f5d735cb2?rik=sYRmgsBmp6aefw&pid=ImgRaw&r=0",
       cancion: "Felices los 4",
       autor: "Maluma",
     },
     {
-      grafico: gra1,
+      grafico: gi,
       img: "https://th.bing.com/th/id/R.59ec07f620f660c4ecd24f3052c1ccaa?rik=Nk2axs4ZOY98%2bQ&pid=ImgRaw&r=0",
       cancion: "Mi Gente",
       autor: "J Balvin",
     },
     {
-      grafico: gra2,
+      grafico: gi,
       img: "https://th.bing.com/th/id/R.59ec07f620f660c4ecd24f3052c1ccaa?rik=Nk2axs4ZOY98%2bQ&pid=ImgRaw&r=0",
       cancion: "Ay Vamos",
       autor: "J Balvin",
     },
     {
-      grafico: gra1,
+      grafico: gi,
       img: "https://www.laut.de/bilder/wortlaut/artists/d/daddy_yankee/artist-image,151065.jpg",
       cancion: "Con Calma",
       autor: "Daddy Yankee",
     },
     {
-      grafico: gra2,
+      grafico: gi,
       img: "https://www.laut.de/bilder/wortlaut/artists/d/daddy_yankee/artist-image,151065.jpg",
       cancion: "Gasolina",
       autor: "Daddy Yankee",
     },
     {
-      grafico: gra1,
+      grafico: gi,
       img: "https://th.bing.com/th/id/R.028652612efd7538ad56392f5d735cb2?rik=sYRmgsBmp6aefw&pid=ImgRaw&r=0",
       cancion: "Hawái",
       autor: "Maluma",
     },
     {
-      grafico: gra2,
+      grafico: gi,
       img: "https://th.bing.com/th/id/R.028652612efd7538ad56392f5d735cb2?rik=sYRmgsBmp6aefw&pid=ImgRaw&r=0",
       cancion: "Felices los 4",
       autor: "Maluma",
     },
     {
-      grafico: gra1,
+      grafico: gi,
       img: "https://th.bing.com/th/id/R.59ec07f620f660c4ecd24f3052c1ccaa?rik=Nk2axs4ZOY98%2bQ&pid=ImgRaw&r=0",
       cancion: "Mi Gente",
       autor: "J Balvin",
     },
     {
-      grafico: gra2,
+      grafico: gi,
       img: "https://th.bing.com/th/id/R.59ec07f620f660c4ecd24f3052c1ccaa?rik=Nk2axs4ZOY98%2bQ&pid=ImgRaw&r=0",
       cancion: "Ay Vamos",
       autor: "J Balvin",
     },
     {
-      grafico: gra1,
+      grafico: gi,
       img: "https://www.laut.de/bilder/wortlaut/artists/d/daddy_yankee/artist-image,151065.jpg",
       cancion: "Con Calma",
       autor: "Daddy Yankee",
     },
     {
-      grafico: gra2,
+      grafico: gi,
       img: "https://www.laut.de/bilder/wortlaut/artists/d/daddy_yankee/artist-image,151065.jpg",
       cancion: "Gasolina",
       autor: "Daddy Yankee",
@@ -91,7 +92,7 @@ const Reproductor = () => {
     cancion.cancion.toLowerCase().includes(filtro.toLowerCase())
   );
 
-  const [estadistica, setEstadistica] = useState(gra2);
+  const [estadistica, setEstadistica] = useState(gi);
   const cambiar_grafico=(graficos)=>{
     setEstadistica(graficos);
   }
@@ -119,7 +120,7 @@ const Reproductor = () => {
             className="col-md-4 justify-content-center cel "
             id="cel_reproductor"
           >
-            <div className="row justify-content-center pb-5 pt-3 " id="caja">
+            <div className="row justify-content-center pb-5 pt-3" id="caja">
               <div className="col-md-8 text-center pt-5">
                 <div class="form-group row">
                   <input
@@ -181,13 +182,7 @@ const Reproductor = () => {
                     ))}
               </div>
             </div>
-            <div className="row justify-content-center" id="btn_fin">
-              <div className="col-md-12 text-center">
-                <button type="button" class="btn btn-pink px-5">
-                  View more song
-                </button>
-              </div>
-            </div>
+           
           </div>
           <div
             className="col-md-8  pc "
@@ -196,12 +191,12 @@ const Reproductor = () => {
             <div className="row  justify-content-center py-5">
               <div className="col-md-10 mb-3">
                 <img src={estadistica} className="mi-imagen" />
+              </div> 
+              <div className="col-md-3 pt-5 ">
+                <button className="btn btn-verde" onClick={()=>setventa(true)}>Comprar</button>
               </div>
-              <div className="col-md-3">
-                <button className="btn btn-verde" onClick={()=>setventa(true)}>Buy</button>
-              </div>
-              <div className="col-md-3">
-                <button className="btn btn-rojo">Sell</button>
+              <div className="col-md-3 pt-5">
+                <button className="btn btn-rojo">Vender</button>
               </div>
             </div>
           

@@ -3,7 +3,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import cn from "classnames";
 import logoImage from "../../../src/assets/img/logo/logoMus.png";
 import imagBalance from "../../../src/assets/img/logo/balance.png";
-
+import usuarios from "../../../src/assets/img/reproductor/boton usuario.png";
 import Lateral from "../Sidebar/Latera";
 import $ from "jquery";
 import { handleClickScroll } from "../../lib/helpers";
@@ -78,116 +78,19 @@ const HeaderOne = ({visible, setVisible ,setDuelos,setRedes}) => {
 
       <div id="sticky-header" className={cn("menu-area", stickyClass.header)}>
         <div className={cn("container custom-container")}>
-          <div className="row">
+          <div className="row justify-content-center">
             <div className="col-12">
               <div className={"mobile-nav-toggler"}>
                 <i className="fas fa-bars" />
               </div>
-
               <div className="menu-wrap">
-                <nav className={"menu-nav"}>
-                  <div className="logo">
-                  <Lateral visible={visible} setVisible={setVisible} setDuelos={setDuelos}  setRedes={setRedes} />
-                   
-                  </div>
-
-                  <div className={cn("navbar-wrap main-menu d-none d-lg-flex")}>
-                  <div className="balance">
-                  <Link to={"/"}>
-                      <img src={imagBalance} alt="BigTech Logo" />
-                  </Link>
-                  </div>
-                
-
-                   {/*
-                    <ul className={"navigation"}>
-                      <li
-                        className={cn(
-                          hash == "" && "active",
-                          "menu-item-has-children"
-                        )}
-                      >
-                        <Link
-                          to="#header"
-                          className={"section-link"}
-                          onClick={() => handleClickScroll("header")}
-                        >
-                          Home
-                        </Link>
-                        <ul className={cn("sub-menu")}>
-                          <li className={cn(pathname == "/" && "active")}>
-                            <NavLink to="/">Home One</NavLink>
-                          </li>
-                          <li
-                            className={cn(pathname == "/home-two" && "active")}
-                          >
-                            <NavLink to="/home-two">Home Two</NavLink>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className={cn(hash == "#about" && "active")}>
-                        <Link
-                          to="#about"
-                          className={"section-link"}
-                          onClick={() => handleClickScroll("about")}
-                        >
-                          About us
-                        </Link>
-                      </li>
-                      <li className={isActiveLink("#sales")}>
-                        <Link
-                          to="#sales"
-                          className={"section-link"}
-                          onClick={() => handleClickScroll("sales")}
-                        >
-                          Compras
-                        </Link>
-                      </li>
-                      <li className={isActiveLink("#roadmap")}>
-                        <Link
-                          to="#roadmap"
-                          className={"section-link"}
-                          onClick={() => handleClickScroll("roadmap")}
-                        >
-                          Roadmap
-                        </Link>
-                      </li>
-                                       
-                    </ul>
-*/}
-                  </div>
-                  <div className={cn("header-action", "d-none d-md-block")}>
-                    <ul>
-                      {/*
-                      <li className={"header-lang"}>
-                        <span className={"selected-lang"}>ENG</span>
-                        <ul className={"lang-list"}>
-                          <li>
-                            <Link to="#">IND</Link>
-                          </li>
-                          <li>
-                            <Link to="#">BNG</Link>
-                          </li>
-                          <li>
-                            <Link to="#">TUR</Link>
-                          </li>
-                          <li>
-                            <Link to="#">CIN</Link>
-                          </li>
-                        </ul>
-                      </li>
-
-                      */}
-                      <li className={"header-btn"}>
-                        <Link to="#" className="btn">Collect</Link>
-                      </li>
-                      <li className={"header-btn2"}>
-                        <Link to="#" className="btn">deposit</Link>
-                      </li>
-                    </ul> 
-                    
-                  </div>
-                </nav>
+                <div className="row justify-content-between align-items-center">
+                  <div className="col-md-1 logo mb-4"> <Lateral visible={visible} setVisible={setVisible} setDuelos={setDuelos}  setRedes={setRedes} /></div>
+                  <div className="col-md-6 text-center"> <img src={imagBalance} alt="BigTech Logo" /></div>
+                  <div className="col-md-1 align-items-center"><button className="btn btn-rojo"> Depositar</button></div>
+                  <div className="col-md-1"><button className="btn btn-verde"> Retirar</button></div>
+                  <div className="col-md-1"><img src={usuarios} width={60} /></div>
+                </div>
               </div>
 
               {/* <!-- Mobile Menu  --> */}

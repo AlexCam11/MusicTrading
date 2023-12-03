@@ -16,6 +16,7 @@ const SalesTabContent = (props) => {
         <p className="">{props.description}</p>
         <img src={art} alt="" ></img>
       </div>
+      
     </div>
   );
 };

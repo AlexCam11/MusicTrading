@@ -1,9 +1,9 @@
 import React from "react";
-import chartImg from "../../assets/img/images/grafico-final.png";
+
 import SalesTabButton from "./SalesTabButton";
 import SalesTabContent from "./SalesTabContent";
 import { Link } from "react-router-dom";
-
+import chartImg from "../../assets/img/reproductor/grafica para artistas-1.gif";
 const Sales = () => {
   const chart_info_list = [
     "Unit: 1/100000 ",
@@ -16,48 +16,11 @@ const Sales = () => {
       <div className="container">
         <div className="chart-inner">
           <div className="row align-items-center justify-content-center">
-            <div className="col-lg-6 col-md-10 order-0 order-lg-2">
-              <div className="chart-wrap wow fadeInRight" data-wow-delay=".2s">
-                <img src={chartImg} alt="" />
-                <ul>
-                  {chart_info_list.map((x, index) => (
-                    <li key={index}>{x}</li>
-                  ))}
-                <Link  className="btn" style={{background:"#FF0000", alignContent: "center"}} >
-                  BUY
-                </Link>
-                <Link className="btn" style={{background:"#008000",alignContent: "center"}}>
-                  SELL
-                </Link>
-                </ul>
-              </div>
-            </div>
 
-            <div className="col-lg-6 col-md-10">
-              <div
-                className="chart-content wow fadeInLeft"
-                data-wow-delay=".2s"
-              >
-                <ul className="nav nav-tabs" id="myTab" role="tablist">
-                  <SalesTabButton
-                    title="Song"
-                    className="active"
-                    id="funding-tab"
-                    target="#funding"
-                    ariaControls="funding"
-                    ariaSelected={true}
-                  />
-
-                  <SalesTabButton
-                    title="Investments"
-                    className=""
-                    id="token-tab"
-                    target="#token"
-                    ariaControls="token"
-                    ariaSelected={false}
-                  />
-                </ul>
-
+            
+            <div className="col-lg-12 col-md-12 order-0 order-lg-2">
+            <div className="row ">
+                <div className="col-md-5 chart-wrap wow fadeInRight">
                 <div className="tab-content" id="myTabContent">
                   <SalesTabContent
                     className={"show active"}
@@ -67,16 +30,43 @@ const Sales = () => {
                     description="Song by artist J balvin with 10 M views"
                     link="/"
                   />
-
-                  <SalesTabContent
-                    className={""}
-                    id="token"
-                    ariaLabel="token-tab"
-                    title="Investment community"
-                    description="39 Million return on investments in royalties"
-                    link="/"
-                  />
+<br/>
+                  J Balvin, es un cantante y productor colombiano, reconocido como uno de los artistas latinos más vendidos del mundo, con ventas de treinta y cinco millones de álbumes y sencillos a nivel mundial.
+                 
                 </div>
+                </div>
+                <div className="col-md-7 text-center">
+                <div className="chart-wrap wow fadeInRight text-dark" data-wow-delay=".2s">
+                <img src={chartImg} alt="" />
+                <ul>
+                  {chart_info_list.map((x, index) => (
+                    <li key={index}>{x}</li>
+                  ))}
+                
+                 
+                </ul>
+              </div>
+              <div className="row justify-content-center">
+                      <div className="col-md-3 pt-5 text-center">
+                        <button className="btn btn-verde pr-5">Comprar</button>
+                      </div>
+                        <div className="col-md-3 pt-5 text-center">
+                        <button className="btn btn-rojo">Vender</button>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+
+            <div className="col-lg-6 col-md-10">
+              <div
+                className="chart-content wow fadeInLeft"
+                data-wow-delay=".2s"
+              >
+              
+               
               </div>
             </div>
           </div>

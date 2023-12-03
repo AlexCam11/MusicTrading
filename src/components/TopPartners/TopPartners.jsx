@@ -29,7 +29,7 @@ const TopPartners = () => {
               <ul>
                 {partners_list.map((item, index) => (
                   <li key={index} onClick={()=>setmusica(true)}>
-                    <img src={item.src} alt={item.title} />
+                    <img src={item.src} alt={item.title} width={200}/>
                   </li>
                 ))}
               </ul>

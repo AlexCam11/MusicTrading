@@ -1643,7 +1643,14 @@ label {
   padding: 0 110px;
 }
 .chart-bg {
-  
+
+  background-size: cover;
+  background-position: center;
+  padding: 130px 0;
+}
+
+.chart-bg3 {
+  background-image: url(../img/git/aurora.gif);
   background-size: cover;
   background-position: center;
   padding: 130px 0;
@@ -3573,10 +3580,8 @@ label {
 }
 
 #cel_reproductor {
-  background-image: url('../img/reproductor/fondo\ 1.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+  background-color: #D2D7DD;
+  border-radius: 20px;
 }
 #scroll {
   max-height: 550px; /* Puedes ajustar la altura máxima según tus necesidades */
@@ -3648,9 +3653,9 @@ label {
   padding: 10px 20px; /* Ajusta el relleno según tus necesidades */
 }
 .mi-imagen {
-  height: 70vh;
+  height: 60vh;
   width: 163%;
- 
+ border-radius: 30px;
 }
 .cel{
   position: relative; /* Necesario para z-index funcione */
@@ -3661,4 +3666,27 @@ label {
   position: relative; /* Necesario para z-index funcione */
   z-index: 1;
   left: -60px; 
+}
+
+.bg-claro{
+  background-color: #D2D7DD !important;
+
+}
+
+.chart-wrap1 {
+  background: #d0dae6;
+  border-radius: 20px;
+  padding: 60px 45px 60px;
+  text-align: center;
+}
+
+.chart-wrap1 ul li {
+  width: 50%;
+  text-align: left;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 8px;
 }
