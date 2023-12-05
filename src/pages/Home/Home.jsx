@@ -16,11 +16,14 @@ import Redes from "../../components/Sales/Redes";
 import Inicio from "../../components/Sales/Inicio";
 
 
+
+
 const Home = () => {
   /* <div className="area-bg">
           <Roadmap />
           <WhitePaper />
         </div>
+		hdhdididj
 
         <ContactOne />
   */
