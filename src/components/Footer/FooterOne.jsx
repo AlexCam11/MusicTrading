@@ -29,8 +29,7 @@ const FooterOne = () => {
                   </Link>
                   <div className="footer-content">
                     <p>
-                      A new way to make the payments easy, reliable and 100%
-                      secure.
+                      Una nueva forma de hacer trading en la musica con los pagos fáciles, fiables y 100% seguros.
                     </p>
                     <ul className="footer-social">
                       <li>
@@ -62,23 +61,23 @@ const FooterOne = () => {
                   className="footer-widget  wow fadeInUp"
                   data-wow-delay=".4s"
                 >
-                  <h4 className="fw-title">Useful Links</h4>
+                  <h4 className="fw-title">ENLACES UTILES</h4>
                   <div className="footer-link">
                     <ul>
                       <li>
-                        <Link to="/">Contact us</Link>
+                        <Link to="/">Contactanos</Link>
                       </li>
                       <li>
-                        <Link to="/">How it Works</Link>
+                        <Link to="/">Como funciona</Link>
                       </li>
                       <li>
-                        <Link to="/">Create</Link>
+                        <Link to="/">Crear</Link>
                       </li>
                       <li>
-                        <Link to="/">Explore</Link>
+                        <Link to="/">Explorar</Link>
                       </li>
                       <li>
-                        <Link to="/">Terms & Services</Link>
+                        <Link to="/">Terminos y Servicios</Link>
                       </li>
                     </ul>
                   </div>
@@ -89,23 +88,23 @@ const FooterOne = () => {
                   className="footer-widget wow fadeInUp"
                   data-wow-delay=".6s"
                 >
-                  <h4 className="fw-title">Community</h4>
+                  <h4 className="fw-title">Comunidad</h4>
                   <div className="footer-link">
                     <ul>
                       <li>
-                        <Link to="/">Help Center</Link>
+                        <Link to="/">Centro de ayuda</Link>
                       </li>
                       <li>
-                        <Link to="/">Partners</Link>
+                        <Link to="/">Socios</Link>
                       </li>
                       <li>
-                        <Link to="/">Suggestions</Link>
+                        <Link to="/">Sugerencias</Link>
                       </li>
                       <li>
                         <Link to="/">Blog</Link>
                       </li>
                       <li>
-                        <Link to="/">Newsletters</Link>
+                        <Link to="/">Boletines</Link>
                       </li>
                     </ul>
                   </div>
@@ -116,10 +115,10 @@ const FooterOne = () => {
                   className="footer-widget wow fadeInUp"
                   data-wow-delay=".8s"
                 >
-                  <h4 className="fw-title">Subscribe Newsletter</h4>
+                  <h4 className="fw-title">Sucripcion</h4>
                   <div className="footer-newsletter">
                     <p>
-                    Receive information about new releases
+                   Recibe información sobre nuevos lanzamientos
                     </p>
                     <form action="#">
                       <input
@@ -147,13 +146,13 @@ const FooterOne = () => {
                 <div className="footer-menu">
                   <ul>
                     <li>
-                      <Link to="#">Terms and conditions</Link>
+                      <Link to="#">Terminos y Condiciones</Link>
                     </li>
                     <li>
-                      <Link to="#">Privacy policy</Link>
+                      <Link to="#">Politica de privacidad</Link>
                     </li>
                     <li>
-                      <Link to="#">Login / Signup</Link>
+                      <Link to="#">Ingresar / Registrar</Link>
                     </li>
                   </ul>
                 </div>

@@ -21,9 +21,9 @@ const Inicio = () => {
       <div className="container">
         <div className="row mt-5">
         </div>
-        <div className="row  justify-content-center mt-5">
-            <div className="col-md-8">
-            <img src={repr}  />
+        <div className="row  justify-content-center mt-5 ms-5">
+            <div className="col-md-8 ms-5">
+            <img src={repr}  width={700}/>
             </div>
        
         </div>

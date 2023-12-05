@@ -27,7 +27,7 @@ const Sales = () => {
                     id="funding"
                     ariaLabel="funding-tab"
                     title="Mi gente"
-                    description="Song by artist J balvin with 10 M views"
+                    description="Canción de J Balvin con 10 Millones de reproducciones"
                     link="/"
                   />
 <br/>

@@ -36,8 +36,8 @@ const Lateral = ({ visible, setVisible,setDuelos,setRedes }) => {
           <Menu>
             <MenuItem>  <img src={logoImage} alt="BigTech Logo"  />  </MenuItem>
             <MenuItem onClick={()=>inicio()}><FaHome /> HOME</MenuItem>
-            <MenuItem onClick={()=>duelos()}><GiBoxingGlove /> DUELOS</MenuItem>
-            <MenuItem onClick={()=>redes()}><FaNewspaper /> REDES</MenuItem>
+            <MenuItem onClick={()=>duelos()}><GiBoxingGlove /> APUESTAS MUSICALES </MenuItem>
+            <MenuItem onClick={()=>redes()}><FaNewspaper /> NOTICIAS </MenuItem>
        
             
           </Menu>

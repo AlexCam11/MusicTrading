@@ -1,6 +1,6 @@
 import React from "react";
 import chartImg from "../../assets/img/images/grafico-final.png";
-import plataforma from "../../assets/img/reproductor/plataforma 2 3.gif";
+import plataforma from "../../assets/img/git/plataformas personalizada.gif";
 
 
 import SalesTabButton from "./SalesTabButton";

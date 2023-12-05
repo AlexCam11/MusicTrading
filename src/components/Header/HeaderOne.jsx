@@ -86,9 +86,9 @@ const HeaderOne = ({visible, setVisible ,setDuelos,setRedes}) => {
               <div className="menu-wrap">
                 <div className="row justify-content-between align-items-center">
                   <div className="col-md-1 logo mb-4"> <Lateral visible={visible} setVisible={setVisible} setDuelos={setDuelos}  setRedes={setRedes} /></div>
-                  <div className="col-md-6 text-center"> <img src={imagBalance} alt="BigTech Logo" /></div>
-                  <div className="col-md-1 align-items-center"><button className="btn btn-rojo"> Depositar</button></div>
-                  <div className="col-md-1"><button className="btn btn-verde"> Retirar</button></div>
+                  <div className="col-md-5 text-center"> </div>
+                  <div className="col-md-2 align-items-center "><img src={imagBalance} alt="BigTech Logo" /></div>
+                  <div className="col-md-1"><button className="btn btn-verde"> Deposito</button></div>
                   <div className="col-md-1"><img src={usuarios} width={60} /></div>
                 </div>
               </div>
